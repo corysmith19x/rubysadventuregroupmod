@@ -116,7 +116,7 @@ public class RubyController : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
 
-        if(ScoreScript.scoreValue == 3)
+        if(ScoreScript.scoreValue == 4)
         {
             Win();
         }
@@ -189,5 +189,10 @@ public class RubyController : MonoBehaviour
     {
         SceneManager.LoadScene("WinScene");
         ScoreScript.scoreValue = 0;
+    }
+
+    public void ChangeSpeed()
+    {
+        speed += 1;
     }
 }
