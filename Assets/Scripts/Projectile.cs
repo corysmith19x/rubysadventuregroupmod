@@ -29,14 +29,14 @@ public class Projectile : MonoBehaviour
 
         GameObject projectileEffect = Instantiate(projectileParticle, transform.position, transform.rotation *= Quaternion.Euler(-90, 0, 0));
         EnemyController e = other.collider.GetComponent<EnemyController>();
-        AutoManiacScript am = other.collider.GetComponent<AutoManiacScript>();
+        AutoManiacScript am = other.collider.GetComponent<AutoManiacScript>(); //CHANGE MADE BY: Cory Smith
 
         if (e != null)
         {
             e.Fix();
         }
 
-        if (am != null)
+        if (am != null) //CHANGE MADE BY: Cory Smith
         {
             AutoManiacScript.automaniacHealth -= 1;
 

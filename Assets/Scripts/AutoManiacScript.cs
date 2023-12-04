@@ -84,10 +84,12 @@ public class AutoManiacScript : MonoBehaviour
 
         if (player != null)
         {
+            //CHANGE MADE BY: Cory Smith
             player.ChangeHealth(-2);
         }
     }
     public void AMFix()
+    // CHANGE MADE BY: Cory Smith
     {
         if (automaniacHealth == 0)
         {

@@ -192,6 +192,7 @@ public class RubyController : MonoBehaviour
     }
 
     public void ChangeSpeed()
+    //CHANGE MADE BY: Gabriel Santana
     {
         speed += 1;
     }

@@ -13,6 +13,7 @@ public class OilCanCollectible : MonoBehaviour
 
         if (controller != null)
         {
+            //CHANGE MADE BY: Gabriel Santana
             controller.ChangeSpeed();
 
             GameObject healthEffect = Instantiate(healthParticle, transform.position, transform.rotation *= Quaternion.Euler(-90, 0, 0));
